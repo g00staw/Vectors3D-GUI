@@ -2,6 +2,8 @@ import javax.swing.*;
 
 public class MainMenu extends JFrame {
     private JPanel MainPanel;
+    private JButton ustawieniaButton;
+    private JButton wróćButton;
 
     public MainMenu(){
         setContentPane(MainPanel);
