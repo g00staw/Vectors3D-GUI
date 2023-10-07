@@ -27,7 +27,8 @@
             <properties>
               <font name="Century Gothic" size="22" style="1"/>
               <foreground color="-855301"/>
-              <text value="3D Vectors Calculator"/>
+              <icon value="icons/3Dvecsamll.png"/>
+              <text value=""/>
             </properties>
           </component>
           <component id="2c83e" class="javax.swing.JLabel">
@@ -60,7 +61,9 @@
               <foreground color="-855301"/>
               <hideActionText value="false"/>
               <horizontalTextPosition value="0"/>
+              <icon value="icons/setting-lines.png"/>
               <text value="Ustawienia"/>
+              <verticalTextPosition value="3"/>
             </properties>
           </component>
           <component id="10467" class="javax.swing.JButton" binding="wróćButton" default-binding="true">
@@ -72,7 +75,10 @@
               <font name="Century Gothic" size="20" style="0"/>
               <foreground color="-855301"/>
               <horizontalTextPosition value="0"/>
+              <icon value="icons/rtrn.png"/>
               <text value="Wróć"/>
+              <verticalAlignment value="0"/>
+              <verticalTextPosition value="3"/>
             </properties>
           </component>
           <vspacer id="fe686">

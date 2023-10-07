@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class MainMenu extends JFrame {
     private JPanel MainPanel;
