@@ -1,11 +1,12 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
 
 public class MainMenu extends JFrame {
     private JPanel MainPanel;
     private JButton ustawieniaButton;
     private JButton back;
-    private JButton sum;
-    private JButton button2;
+    private JButton diffofvec;
+    private JButton sumofvec;
     private JButton button3;
     private JButton button4;
     private JButton button5;
@@ -18,6 +19,16 @@ public class MainMenu extends JFrame {
         setSize(1920,1080);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+        pack();
         setVisible(true);
+    }
+
+
+    public void changeScene(ActionEvent event){
+        String command = event.getActionCommand();
+        if("sumofvec".equals(command)){
+            new SumOfVGUI();
+        }
+
     }
 }

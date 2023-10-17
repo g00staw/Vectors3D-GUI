@@ -105,7 +105,7 @@
           </vspacer>
         </children>
       </grid>
-      <component id="434e3" class="javax.swing.JButton" binding="sum">
+      <component id="434e3" class="javax.swing.JButton" binding="diffofvec">
         <constraints>
           <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -116,13 +116,14 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="94322" class="javax.swing.JButton" binding="button2" default-binding="true">
+      <component id="94322" class="javax.swing.JButton" binding="sumofvec">
         <constraints>
           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-11645362"/>
           <foreground color="-11645362"/>
+          <hideActionText value="false"/>
           <icon value="icons/box-suma-sm.png"/>
           <text value=""/>
         </properties>
