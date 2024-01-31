@@ -303,6 +303,14 @@
                   <text value="Wektory które będą użyte w operacji:"/>
                 </properties>
               </component>
+              <component id="c8969" class="javax.swing.JButton" binding="obliczButton" default-binding="true">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Oblicz"/>
+                </properties>
+              </component>
               <component id="82a30" class="javax.swing.JTable" default-binding="true">
                 <constraints>
                   <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
@@ -314,17 +322,9 @@
                   <foreground color="-1180179"/>
                 </properties>
               </component>
-              <component id="c8969" class="javax.swing.JButton" binding="obliczButton" default-binding="true">
-                <constraints>
-                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Oblicz"/>
-                </properties>
-              </component>
             </children>
           </grid>
-          <grid id="31811" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="31811" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="5" left="5" bottom="5" right="5"/>
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -347,18 +347,7 @@
                   <text value="Baza wektorów"/>
                 </properties>
               </component>
-              <component id="f919a" class="javax.swing.JTable" binding="table1" default-binding="true">
-                <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="50"/>
-                  </grid>
-                </constraints>
-                <properties>
-                  <background color="-2302756"/>
-                  <foreground color="-1180179"/>
-                </properties>
-              </component>
-              <component id="a635b" class="javax.swing.JRadioButton" binding="bazaDomyślnaRadioButton" default-binding="true">
+              <component id="a635b" class="javax.swing.JRadioButton" binding="DefaultDatabase">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -366,10 +355,11 @@
                   <background color="-11645362"/>
                   <font name="Century Gothic" size="20" style="1"/>
                   <foreground color="-1180179"/>
+                  <selected value="true"/>
                   <text value="Baza domyślna"/>
                 </properties>
               </component>
-              <component id="2c781" class="javax.swing.JRadioButton" binding="bazaUżytkownikaRadioButton" default-binding="true">
+              <component id="2c781" class="javax.swing.JRadioButton" binding="UserDatabase">
                 <constraints>
                   <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -380,6 +370,42 @@
                   <text value="Baza użytkownika"/>
                 </properties>
               </component>
+              <component id="cbe4" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12897221"/>
+                  <font name="Arial Black" size="24" style="0"/>
+                  <foreground color="-1180179"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="[ ID ] [ X: ] [ Y: ] [ Z: ]"/>
+                </properties>
+              </component>
+              <scrollpane id="448c0">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Consolas" size="16" style="0"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="f7ad7" class="javax.swing.JTable" binding="tableOfVectors">
+                    <constraints/>
+                    <properties>
+                      <background color="-2302756"/>
+                      <fillsViewportHeight value="false"/>
+                      <font name="JetBrains Mono" size="16" style="0"/>
+                      <foreground color="-16777216"/>
+                    </properties>
+                    <clientProperties>
+                      <JTable.autoStartsEdit class="java.lang.Boolean" value="false"/>
+                    </clientProperties>
+                  </component>
+                </children>
+              </scrollpane>
             </children>
           </grid>
           <grid id="37886" layout-manager="GridLayoutManager" row-count="6" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -459,4 +485,11 @@
       </grid>
     </children>
   </grid>
+  <buttonGroups>
+    <group name="selectDatabaseGroup">
+      <member id="a635b"/>
+      <member id="a635b"/>
+      <member id="2c781"/>
+    </group>
+  </buttonGroups>
 </form>

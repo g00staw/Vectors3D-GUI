@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dc5fc69-f36b-4316-8cd1-228c627da4ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ScalarProductOfVGUI.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ScalarProductOfVGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SubtractionOfVGUI.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SubtractionOfVGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lengthOfVGUI.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lengthOfVGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/multiplyVBySGUI.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/multiplyVBySGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainMenu.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenu.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vectors3D-GUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Vectors3D-GUI.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SumOfVGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SumOfVGUI.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SumOfVGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SumOfVGUI.java" afterDir="false" />
     </list>
@@ -47,16 +36,27 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "409",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "324",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "369",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "538",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/konra/Desktop/Java Projects/Vectors3D-GUI",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "last_opened_file_path": "C:/Users/konra/Desktop/Programowanie - Grafika/java-lib/poi-bin-5.2.3/auxiliary/fontbox-2.0.26.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-19" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainMenu" />
+      <module name="Vectors3D-GUI" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
