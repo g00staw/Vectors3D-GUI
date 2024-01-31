@@ -5,17 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dc5fc69-f36b-4316-8cd1-228c627da4ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/SumOfVGUI.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SumOfVGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ScalarProductOfVGUI.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ScalarProductOfVGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SubtractionOfVGUI.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SubtractionOfVGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lengthOfVGUI.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lengthOfVGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/multiplyVBySGUI.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/multiplyVBySGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainMenu.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenu.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/box-dlugosc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/box-dlugosc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/box-iloczyn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/box-iloczyn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/box-mnozenie.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/box-mnozenie.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/box-rozne.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/box-rozne.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/box-roznica.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/box-roznica.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/box-suma.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/box-suma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SumOfVGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SumOfVGUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SumOfVGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SumOfVGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +47,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "409",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "324",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/konra/Desktop/Java Projects/Vectors3D-GUI",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
