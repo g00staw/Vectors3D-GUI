@@ -29,37 +29,19 @@ public class SumOfVGUI extends JFrame {
         setVisible(true);
 
         DefaultTableModel model = new DefaultTableModel();
-        model.addColumn("ID Wektora");
-        model.addColumn("Współrzędna X");
-        model.addColumn("Współrzędna Y");
-        model.addColumn("Współrzędna Z");
-
-        // Ustaw model dla tableOfVectors
-        tableOfVectors.setModel(model);
 
         ActionListener listener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JRadioButton button = (JRadioButton) e.getSource();
-                if(button == DefaultDatabase) {
-                    InjectDatabase database = new InjectDatabase("database/UserDatabase.xlsx");
-                    List<Vector3D> vectorsFromDatabase = database.readVectorsFromDatabase();
-                    if (vectorsFromDatabase != null) {
-                        System.out.println("Wektory z bazy danych 1:");
-                        for (Vector3D vector : vectorsFromDatabase) {
-                            model.addRow(new Object[]{vector.getId(),vector.getX(),vector.getY(),vector.getZ()});
-                        }
-                    }
+                if(button == UserDatabase) {
+                    LoadDatabaseToTable newTableWithData = new LoadDatabaseToTable();
+                    tableOfVectors.setModel(newTableWithData.tableWithData("database/UserDatabase.xlsx"));
+
 
                 } else {
-                    InjectDatabase database = new InjectDatabase("database/3dVecCordINTNUM.xlsx");
-                    List<Vector3D> vectorsFromDatabase = database.readVectorsFromDatabase();
-                    if (vectorsFromDatabase != null) {
-                        System.out.println("Wektory z bazy danych 1:");
-                        for (Vector3D vector : vectorsFromDatabase) {
-                            model.addRow(new Object[]{vector.getId(),vector.getX(),vector.getY(),vector.getZ()});
-                        }
-                    }
+                    LoadDatabaseToTable newTableWithData2 = new LoadDatabaseToTable();
+                    tableOfVectors.setModel(newTableWithData2.tableWithData("database/3dVecCordINTNUM.xlsx"));
                 }
             }
         };
