@@ -32,6 +32,14 @@ public class MainMenu extends JFrame {
                 new SumOfVGUI();
             }
         });
+
+        diffofvec.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new SubtractionOfVGUI();
+            }
+        });
     }
 
     public static void main(String[] args) {

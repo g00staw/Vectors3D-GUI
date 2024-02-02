@@ -13,11 +13,11 @@ public class SumOfVGUI extends JFrame {
     private JPanel panel1;
     private JButton ustawieniaButton;
     private JButton back;
-    private JButton button1;
+    private JButton mainMenuButton;
     private JTable tableOfVectors;
     private JRadioButton UserDatabase;
     private JButton saveLogsButton;
-    private JButton wyczyśćButton;
+    private JButton clearButton;
     private JButton calculateButton;
     private JRadioButton DefaultDatabase;
     private JTextField xCord;
@@ -92,16 +92,52 @@ public class SumOfVGUI extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 SumFunc scoreSUM = new SumFunc();
                 Vector3D productVector = scoreSUM.sumOfGivenVectors(givenVectors, false);
-                scoreLabel.setText(""+productVector);
+                scoreLabel.setText("X: "+productVector.getX()+" Y: "+productVector.getY()+" Z: "+productVector.getZ());
             }
         });
 
         saveLogsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                SumFunc scoreSUM = new SumFunc();
-                Vector3D productVector = scoreSUM.sumOfGivenVectors(givenVectors, true);
-                scoreLabel.setText(""+productVector);
+                if (givenVectors.size() > 1) {
+                    SumFunc scoreSUM = new SumFunc();
+                    Vector3D productVector = scoreSUM.sumOfGivenVectors(givenVectors, true);
+                    scoreLabel.setText("X: "+productVector.getX()+" Y: "+productVector.getY()+" Z: "+productVector.getZ());
+                }
+               else {
+                    JOptionPane.showMessageDialog(null, "Do przeprowadzenia operacji potrzebne są co najmniej dwa wektory.", "Błąd", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        });
+
+        clearButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                xCord.setText("");
+                yCord.setText("");
+                zCord.setText("");
+                givenVectors.clear();
+                LoadDatabaseToTable newTableWithData3 = new LoadDatabaseToTable();
+                addedVectorsTable.setModel(newTableWithData3.tableWithAddedVector(givenVectors));
+                scoreLabel.setText("[ Vector ] X: 0; Y: 0; Z: 0;");
+
+
+            }
+        });
+
+        back.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new MainMenu();
+            }
+        });
+
+        mainMenuButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new MainMenu();
             }
         });
 
@@ -113,4 +149,6 @@ public class SumOfVGUI extends JFrame {
         SumOfVGUI sumOfVGUI = new SumOfVGUI();
         sumOfVGUI.setVisible(true);
     }
+
+
 }
