@@ -1,6 +1,7 @@
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.util.List;
+import java.util.Vector;
 
 public class LoadDatabaseToTable extends JFrame {
 
@@ -21,5 +22,20 @@ public class LoadDatabaseToTable extends JFrame {
             }
         }
         return model;
+    }
+
+    public DefaultTableModel tableWithAddedVector(List<Vector3D> givenVectors){
+        DefaultTableModel model2 = new DefaultTableModel();
+        model2.addColumn("ID Wektora");
+        model2.addColumn("Współrzędna X");
+        model2.addColumn("Współrzędna Y");
+        model2.addColumn("Współrzędna Z");
+        if (givenVectors != null) {
+            for (Vector3D vector : givenVectors) {
+                model2.addRow(new Object[]{vector.getId(), vector.getX(), vector.getY(), vector.getZ()});
+            }
+        }
+
+        return model2;
     }
 }

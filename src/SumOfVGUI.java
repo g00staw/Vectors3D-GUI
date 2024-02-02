@@ -1,7 +1,10 @@
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.util.List;
 
 public class SumOfVGUI extends JFrame {
@@ -13,10 +16,16 @@ public class SumOfVGUI extends JFrame {
     private JButton button1;
     private JTable tableOfVectors;
     private JRadioButton UserDatabase;
-    private JButton zapiszButton;
+    private JButton saveLogsButton;
     private JButton wyczyśćButton;
-    private JButton obliczButton;
+    private JButton calculateButton;
     private JRadioButton DefaultDatabase;
+    private JTextField xCord;
+    private JTextField yCord;
+    private JTextField zCord;
+    private JTable addedVectorsTable;
+    private JButton addVectorButton;
+    private JLabel scoreLabel;
 
 
     public SumOfVGUI(){
@@ -26,6 +35,7 @@ public class SumOfVGUI extends JFrame {
         setSize(1280,720);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+        pack();
         setVisible(true);
 
         DefaultTableModel model = new DefaultTableModel();
@@ -47,6 +57,55 @@ public class SumOfVGUI extends JFrame {
         };
         DefaultDatabase.addActionListener(listener);
         UserDatabase.addActionListener(listener);
+
+        tableOfVectors.getSelectionModel().addListSelectionListener(new ListSelectionListener(){
+            public void valueChanged(ListSelectionEvent event) {
+                int selectedRow = tableOfVectors.getSelectedRow();
+                SelectVectorToWindows selectVector = new SelectVectorToWindows();
+                xCord.setText(selectVector.getX(selectedRow,tableOfVectors));
+                yCord.setText(selectVector.getY(selectedRow,tableOfVectors));
+                zCord.setText(selectVector.getX(selectedRow,tableOfVectors));
+            }
+        });
+
+        List<Vector3D> givenVectors = new ArrayList<>();
+        addVectorButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                InputDataFromGUI vectorCords = new InputDataFromGUI();
+                if(vectorCords.getDoubleData(xCord.getText()) && vectorCords.getDoubleData(yCord.getText()) && vectorCords.getDoubleData(zCord.getText())){
+                    LoadDatabaseToTable newTableWithData3 = new LoadDatabaseToTable();
+                    Vector3D vector;
+                    double x = Double.parseDouble(xCord.getText());
+                    double y = Double.parseDouble(yCord.getText());
+                    double z = Double.parseDouble(zCord.getText());
+                    int id = givenVectors.size();
+                    vector = new Vector3D(id, x,y,z);
+                    givenVectors.add(vector);
+                    addedVectorsTable.setModel(newTableWithData3.tableWithAddedVector(givenVectors));
+                }
+            }
+        });
+
+        calculateButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SumFunc scoreSUM = new SumFunc();
+                Vector3D productVector = scoreSUM.sumOfGivenVectors(givenVectors, false);
+                scoreLabel.setText(""+productVector);
+            }
+        });
+
+        saveLogsButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SumFunc scoreSUM = new SumFunc();
+                Vector3D productVector = scoreSUM.sumOfGivenVectors(givenVectors, true);
+                scoreLabel.setText(""+productVector);
+            }
+        });
+
+
 
 
     }
