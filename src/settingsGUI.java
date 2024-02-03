@@ -5,9 +5,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+import java.io.*;
 
 public class settingsGUI extends JFrame{
     private JPanel panel1;
@@ -27,6 +27,15 @@ public class settingsGUI extends JFrame{
         pack();
         setVisible(true);
 
+        try (BufferedReader reader = new BufferedReader(new FileReader("settings/checkbox_state.txt"))) {
+            String line = reader.readLine();
+            if (line != null) {
+                boolean isChecked = Boolean.parseBoolean(line);
+                roundResultsButton.setSelected(isChecked);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         createDatabaseButton.addActionListener(new ActionListener() {
             @Override
@@ -62,6 +71,38 @@ public class settingsGUI extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 dispose();
                 new EditDatabaseGUI();
+            }
+        });
+
+        roundResultsButton.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                try (PrintWriter writer = new PrintWriter(new File("settings/checkbox_state.txt"))) {
+                    if (e.getStateChange() == ItemEvent.SELECTED) {
+                        writer.println("true");
+                    } else {
+                        writer.println("false");
+                    }
+                } catch (FileNotFoundException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
+
+
+        back.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new MainMenu();
+            }
+        });
+
+        button1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new MainMenu();
             }
         });
     }
