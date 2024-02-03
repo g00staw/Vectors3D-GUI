@@ -32,7 +32,15 @@ public class LoadDatabaseToTable extends JFrame {
         model2.addColumn("Współrzędna Z");
         if (givenVectors != null) {
             for (Vector3D vector : givenVectors) {
-                model2.addRow(new Object[]{vector.getId(), vector.getX(), vector.getY(), vector.getZ()});
+                String xString = String.valueOf(vector.getX()).replace(',', '.');
+                String yString = String.valueOf(vector.getY()).replace(',', '.');
+                String zString = String.valueOf(vector.getZ()).replace(',', '.');
+
+                double x = Double.parseDouble(xString);
+                double y = Double.parseDouble(yString);
+                double z = Double.parseDouble(zString);
+
+                model2.addRow(new Object[]{vector.getId(), x, y, z});
             }
         }
 

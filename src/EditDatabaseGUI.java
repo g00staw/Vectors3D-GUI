@@ -121,12 +121,9 @@ public class EditDatabaseGUI extends JFrame{
                      Workbook workbook = new XSSFWorkbook(fis)){
 
                     Sheet sheet = workbook.getSheetAt(0);
-
-
                     InputDataFromGUI vectorCords = new InputDataFromGUI();
 
-                    Row firstRow = sheet.getRow(0);
-                    if (vectorCords.getIntData(xCordADD.getText()) && vectorCords.getDoubleData(yCordADD.getText()) && vectorCords.getDoubleData(zCordADD.getText())) {
+                    if (vectorCords.getIntData(idEDIT.getText()) && vectorCords.getDoubleData(yCordEDIT.getText()) && vectorCords.getDoubleData(zCordEDIT.getText())) {
                         int id = Integer.parseInt(idEDIT.getText());
                         if(id > 0 && id <= sheet.getLastRowNum()){
                             Row selectedRow = sheet.getRow(id);
@@ -144,6 +141,7 @@ public class EditDatabaseGUI extends JFrame{
                             workbook.write(fos);
                             fos.close();
                             JOptionPane.showMessageDialog(null, "Wektor został zmodyfikowany.", "Informacja", JOptionPane.INFORMATION_MESSAGE);
+
                             LoadDatabaseToTable newTableWithData2 = new LoadDatabaseToTable();
                             tableOfVectors.setModel(newTableWithData2.tableWithData("database/UserDatabase.xlsx"));
                         }
@@ -163,6 +161,76 @@ public class EditDatabaseGUI extends JFrame{
                 }
             }
         });
+
+        removeBUTTON.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try (FileInputStream fis = new FileInputStream("database/UserDatabase.xlsx");
+                     Workbook workbook = new XSSFWorkbook(fis)){
+
+                    Sheet sheet = workbook.getSheetAt(0);
+                    InputDataFromGUI vectorCords = new InputDataFromGUI();
+
+                    if (vectorCords.getIntData(idREMOVE.getText())) {
+                        int id = Integer.parseInt(idREMOVE.getText());
+                        Row rowToRemove = sheet.getRow(id);
+                        if(id > 0 && id <= sheet.getLastRowNum() && rowToRemove != null){
+
+                            sheet.removeRow(rowToRemove);
+
+                            if (id >= 0 && id < sheet.getLastRowNum()) {
+                                sheet.shiftRows(id + 1, sheet.getLastRowNum(), -1);
+                            }
+
+                            FileOutputStream fos = new FileOutputStream("database/UserDatabase.xlsx");
+                            workbook.write(fos);
+                            fos.close();
+                            JOptionPane.showMessageDialog(null, "Wektor został usunięty.", "Informacja", JOptionPane.INFORMATION_MESSAGE);
+
+                            LoadDatabaseToTable newTableWithData2 = new LoadDatabaseToTable();
+                            tableOfVectors.setModel(newTableWithData2.tableWithData("database/UserDatabase.xlsx"));
+                        }
+                        else {
+                            JOptionPane.showMessageDialog(null, "Błędny indeks.", "Błąd.", JOptionPane.INFORMATION_MESSAGE);
+                        }
+
+
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Błąd.", "Błąd.", JOptionPane.INFORMATION_MESSAGE);
+                    }
+
+
+
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
+
+        ustawieniaButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new settingsGUI();
+            }
+        });
+
+        back.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new settingsGUI();
+            }
+        });
+
+        mainMenuButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new MainMenu();
+            }
+        });
+
 
 
 

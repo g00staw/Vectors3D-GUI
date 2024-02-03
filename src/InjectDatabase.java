@@ -22,10 +22,18 @@ public class InjectDatabase {
             for (int i = 0; i <= sheet.getLastRowNum(); i++) {
                 Row row = sheet.getRow(i);
 
+
+
                 int id = (int) row.getCell(0).getNumericCellValue();
-                double x = Double.parseDouble(dataFormatter.formatCellValue(row.getCell(1)));
-                double y = Double.parseDouble(dataFormatter.formatCellValue(row.getCell(2)));
-                double z = Double.parseDouble(dataFormatter.formatCellValue(row.getCell(3)));
+
+                String xString = String.valueOf(row.getCell(1)).replace(',', '.');
+                String yString = String.valueOf(row.getCell(2)).replace(',', '.');
+                String zString = String.valueOf(row.getCell(3)).replace(',', '.');
+
+
+                double x = Double.parseDouble(xString);
+                double y = Double.parseDouble(yString);
+                double z = Double.parseDouble(zString);
 
                 Vector3D vector3D = new Vector3D(id, x, y, z);
                 vector3DS.add(vector3D);
