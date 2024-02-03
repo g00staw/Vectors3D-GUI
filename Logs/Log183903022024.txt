@@ -1,0 +1,2 @@
+Długość wektora: [Vector [ID: 0, X: 15.0, Y: -84.0, Z: 15.0]] jest równa: 
+Wektor : 86.6371744691619

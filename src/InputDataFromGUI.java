@@ -18,4 +18,20 @@ public class InputDataFromGUI implements DataInterfaceGUI {
 
         return validInput;
     }
+
+    public boolean getIntData(String data){
+        int var;
+        boolean validInput = false;
+        try{
+            var = Integer.parseInt(data);
+            validInput = true;
+        }
+        catch (NumberFormatException e){
+            System.out.println("-- Bledny format danych.\n-- Sprobuj ponownie.");
+            JOptionPane.showMessageDialog(null, "Wprowadzone dane są nieprawidłowe, proszę spróbować ponownie", "Błąd", JOptionPane.ERROR_MESSAGE);
+        }
+
+
+        return validInput;
+    }
 }

@@ -5,12 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dc5fc69-f36b-4316-8cd1-228c627da4ca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/EditDatabaseGUI.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EditDatabaseGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LengthOfVFunc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/settingsGUI.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/settingsGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/UserDatabase.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/database/UserDatabase.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InputDataFromGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InputDataFromGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LengthOfVector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainMenu.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenu.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ScalarProductOfVGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScalarProductOfVGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/multiplyVBySGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/multiplyVBySGUI.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/multiplyVBySGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/multiplyVBySGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MultiplyVectorByScalar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScalarProductOfVectors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SelectDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SubtractionOfVectors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SumOfVectors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lengthOfVGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/lengthOfVGUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lengthOfVGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lengthOfVGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +96,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/settingsGUI.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

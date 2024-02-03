@@ -5,14 +5,13 @@ import java.awt.event.ActionListener;
 
 public class MainMenu extends JFrame {
     private JPanel MainPanel;
-    private JButton ustawieniaButton;
+    private JButton settingsButton;
     private JButton back;
     private JButton diffofvec;
     private JButton sumofvec;
     private JButton scalarProductButton;
     private JButton multiplyByScalar;
-    private JButton button5;
-    private JButton button6;
+    private JButton lengthOFVButton;
     private JButton button1;
     private JPanel panel1;
 
@@ -54,6 +53,22 @@ public class MainMenu extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 dispose();
                 new multiplyVBySGUI();
+            }
+        });
+
+        lengthOFVButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new lengthOfVGUI();
+            }
+        });
+
+        settingsButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new settingsGUI();
             }
         });
     }
