@@ -1,5 +1,7 @@
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import javax.swing.*;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -42,6 +44,7 @@ public class InjectDatabase {
             return vector3DS;
 
         } catch (IOException e) {
+            JOptionPane.showMessageDialog(null, "Baza danych nie istnieje, proszę ją stworzyć w ustawieniach.", "Błąd.", JOptionPane.INFORMATION_MESSAGE);
             e.printStackTrace();
             return null;
         }

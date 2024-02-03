@@ -26,4 +26,22 @@ public class RoundedResult {
         String finalResult = " "+ roundedX;
         return finalResult;
     }
+
+    public String returnRoundedResultOneVar(double var){
+        double x = var;
+
+
+        DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.US);
+        DecimalFormat decimalFormat = new DecimalFormat("#.##", symbols);
+
+        double roundedX = Double.parseDouble(decimalFormat.format(x));
+
+        String finalResult = String.valueOf(roundedX);
+        return finalResult;
+    }
+
+    public double roundOneVar(double var){
+        String temp = returnRoundedResultOneVar(var);
+        return Double.parseDouble(temp);
+    }
 }

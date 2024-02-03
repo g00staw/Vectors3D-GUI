@@ -1,4 +1,7 @@
 import javax.swing.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.List;
 
 public class ScalarProductOfVsFunc {
@@ -27,6 +30,21 @@ public class ScalarProductOfVsFunc {
                     y *= temp.getY();
                     z *= temp.getZ();
                 }
+            }
+            try (BufferedReader reader = new BufferedReader(new FileReader("settings/checkbox_state.txt"))) {
+                String line = reader.readLine();
+                if (line != null) {
+                    boolean isChecked = Boolean.parseBoolean(line);
+                    if(isChecked){
+                        RoundedResult roundedResult = new RoundedResult();
+                        x = roundedResult.roundOneVar(x);
+                        y = roundedResult.roundOneVar(y);
+                        z = roundedResult.roundOneVar(z);
+
+                    }
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
         else {

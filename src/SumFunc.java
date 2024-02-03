@@ -1,4 +1,7 @@
 import javax.swing.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +22,22 @@ public class SumFunc {
                 x += vector.getX();
                 y += vector.getY();
                 z += vector.getZ();
+
+                try (BufferedReader reader = new BufferedReader(new FileReader("settings/checkbox_state.txt"))) {
+                    String line = reader.readLine();
+                    if (line != null) {
+                        boolean isChecked = Boolean.parseBoolean(line);
+                        if(isChecked){
+                            RoundedResult roundedResult = new RoundedResult();
+                            x = roundedResult.roundOneVar(x);
+                            y = roundedResult.roundOneVar(y);
+                            z = roundedResult.roundOneVar(z);
+
+                        }
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
         else {

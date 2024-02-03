@@ -1,4 +1,7 @@
 import javax.swing.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.List;
 
 public class MultiplyVBySFunc {
@@ -17,6 +20,21 @@ public class MultiplyVBySFunc {
         y = temp.getY() * multiplier;
         z = temp.getZ() * multiplier;
 
+        try (BufferedReader reader = new BufferedReader(new FileReader("settings/checkbox_state.txt"))) {
+            String line = reader.readLine();
+            if (line != null) {
+                boolean isChecked = Boolean.parseBoolean(line);
+                if(isChecked){
+                    RoundedResult roundedResult = new RoundedResult();
+                    x = roundedResult.roundOneVar(x);
+                    y = roundedResult.roundOneVar(y);
+                    z = roundedResult.roundOneVar(z);
+
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         newVector = new Vector3D(0, x,y,z);
 
