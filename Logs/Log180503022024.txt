@@ -1,0 +1,2 @@
+Różnica wektorów: [Vector [ID: 0, X: 5.0, Y: 3.0, Z: 2.0]] jest równa: 
+Wektor : Vector [ID: 0, X: 10.0, Y: 6.0, Z: 4.0]

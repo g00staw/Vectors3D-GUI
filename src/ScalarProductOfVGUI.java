@@ -98,7 +98,7 @@ public class ScalarProductOfVGUI extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 if (givenVectors.size() > 1) {
                     ScalarProductOfVsFunc scoreSCALAR = new ScalarProductOfVsFunc();
-                    Vector3D productVector = scoreSCALAR.scalarProductOfGivenVectors(givenVectors, false);
+                    Vector3D productVector = scoreSCALAR.scalarProductOfGivenVectors(givenVectors, true);
                     scoreLabel.setText("X: "+productVector.getX()+" Y: "+productVector.getY()+" Z: "+productVector.getZ());
                 }
                 else {
