@@ -128,7 +128,7 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="6b888" class="javax.swing.JButton" binding="button3" default-binding="true">
+      <component id="6b888" class="javax.swing.JButton" binding="scalarProductButton">
         <constraints>
           <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>

@@ -9,7 +9,7 @@ public class MainMenu extends JFrame {
     private JButton back;
     private JButton diffofvec;
     private JButton sumofvec;
-    private JButton button3;
+    private JButton scalarProductButton;
     private JButton button4;
     private JButton button5;
     private JButton button6;
@@ -38,6 +38,14 @@ public class MainMenu extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 dispose();
                 new SubtractionOfVGUI();
+            }
+        });
+
+        scalarProductButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new ScalarProductOfVGUI();
             }
         });
     }

@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dc5fc69-f36b-4316-8cd1-228c627da4ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/SubtractionFunc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainMenu.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenu.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SubtractionOfVGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SubtractionOfVGUI.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SubtractionOfVGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SubtractionOfVGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SumOfVGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SumOfVGUI.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SumOfVGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SumOfVGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScalarProductOfVGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScalarProductOfVGUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScalarProductOfVGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScalarProductOfVGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
