@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dc5fc69-f36b-4316-8cd1-228c627da4ca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ScalarProductOfVGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScalarProductOfVGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SubtractionOfVGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SubtractionOfVGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lengthOfVGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lengthOfVGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/multiplyVBySGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/multiplyVBySGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/checkbox_state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/settings/checkbox_state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SumOfVGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SumOfVGUI.form" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,21 +31,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;369&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;313&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/konra/Desktop/Programowanie - Grafika/java-lib/poi-bin-5.2.3/auxiliary/fontbox-2.0.26.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "369",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "313",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/konra/Desktop/Programowanie - Grafika/java-lib/poi-bin-5.2.3/auxiliary/fontbox-2.0.26.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-19" />
