@@ -118,7 +118,7 @@
               <background color="-12897221"/>
               <font name="Century Gothic" size="18" style="0"/>
               <foreground color="-16724163"/>
-              <text value="Zaokrąglaj wyniki"/>
+              <text value="Zaokrąglaj wyniki ( *zalecane jest zaznaczenie )"/>
             </properties>
           </component>
           <component id="1281c" class="javax.swing.JButton" binding="EditDatabaseButton">

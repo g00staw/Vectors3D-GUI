@@ -1,0 +1,2 @@
+Iloczyn skalarny wektorów: [Vector [ID: 0, X: 123.23, Y: 23.32, Z: 123.23], Vector [ID: 1, X: 3.23324, Y: 2.143, Z: 3.23324]] jest równa: 
+Wektor : Vector [ID: 0, X: 398.43, Y: 49.97, Z: 398.43]

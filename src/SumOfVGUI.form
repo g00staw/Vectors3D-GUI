@@ -126,7 +126,7 @@
         </properties>
         <border type="none"/>
         <children>
-          <grid id="89dd4" layout-manager="GridLayoutManager" row-count="6" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="89dd4" layout-manager="GridLayoutManager" row-count="8" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="5" left="5" bottom="5" right="5"/>
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
@@ -141,7 +141,7 @@
               <grid id="c938c" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
                     <minimum-size width="100" height="-1"/>
                   </grid>
                 </constraints>
@@ -277,7 +277,7 @@
               <grid id="53ba2" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-16724992"/>
@@ -313,24 +313,24 @@
                   <background color="-16724163"/>
                   <font name="Arial Black" size="16" style="0"/>
                   <foreground color="-1180179"/>
-                  <text value="Dodaj własne wektory do operacji:"/>
+                  <text value="Dodaj własne wektory"/>
                 </properties>
               </component>
               <component id="25b48" class="javax.swing.JLabel">
                 <constraints>
-                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
                     <minimum-size width="50" height="-1"/>
                   </grid>
                 </constraints>
                 <properties>
                   <font name="Arial Black" size="16" style="0"/>
                   <foreground color="-1180179"/>
-                  <text value="Wektory które będą użyte w operacji:"/>
+                  <text value="Wektory które będą"/>
                 </properties>
               </component>
               <component id="c8969" class="javax.swing.JButton" binding="calculateButton">
                 <constraints>
-                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-12897221"/>
@@ -341,7 +341,7 @@
               </component>
               <scrollpane id="32c62">
                 <constraints>
-                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
                     <minimum-size width="50" height="-1"/>
                   </grid>
                 </constraints>
@@ -359,9 +359,34 @@
                   </component>
                 </children>
               </scrollpane>
+              <component id="82c7a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-16724163"/>
+                  <font name="Arial Black" size="16" style="0"/>
+                  <foreground color="-1180179"/>
+                  <text value="do operacji:"/>
+                </properties>
+              </component>
+              <component id="ec70c" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font name="Arial Black" size="16" style="0"/>
+                  <foreground color="-1180179"/>
+                  <text value="użyte w operacji:"/>
+                </properties>
+              </component>
             </children>
           </grid>
-          <grid id="31811" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="31811" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="5" left="5" bottom="5" right="5"/>
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
@@ -375,7 +400,7 @@
             <children>
               <component id="52db2" class="javax.swing.JLabel">
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-12897221"/>
@@ -383,7 +408,7 @@
                   <foreground color="-1180179"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Baza wektorów"/>
+                  <text value="Baza wektorów:"/>
                 </properties>
               </component>
               <component id="a635b" class="javax.swing.JRadioButton" binding="DefaultDatabase">
@@ -400,22 +425,9 @@
                   <text value="Baza domyślna"/>
                 </properties>
               </component>
-              <component id="2c781" class="javax.swing.JRadioButton" binding="UserDatabase">
-                <constraints>
-                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                    <minimum-size width="50" height="-1"/>
-                  </grid>
-                </constraints>
-                <properties>
-                  <background color="-11645362"/>
-                  <font name="Century Gothic" size="16" style="1"/>
-                  <foreground color="-1180179"/>
-                  <text value="Baza użytkownika"/>
-                </properties>
-              </component>
               <component id="cbe4" class="javax.swing.JLabel">
                 <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-12897221"/>
@@ -428,7 +440,7 @@
               </component>
               <scrollpane id="448c0">
                 <constraints>
-                  <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <font name="Consolas" size="16" style="0"/>
@@ -450,12 +462,25 @@
                   </component>
                 </children>
               </scrollpane>
+              <component id="2c781" class="javax.swing.JRadioButton" binding="UserDatabase">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11645362"/>
+                  <font name="Century Gothic" size="16" style="1"/>
+                  <foreground color="-1180179"/>
+                  <text value="Baza użytkownika"/>
+                </properties>
+              </component>
             </children>
           </grid>
-          <grid id="37886" layout-manager="GridLayoutManager" row-count="6" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="37886" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="5" left="5" bottom="5" right="5"/>
             <constraints>
-              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
                 <minimum-size width="100" height="-1"/>
               </grid>
             </constraints>
@@ -479,7 +504,7 @@
               </component>
               <component id="73ec" class="javax.swing.JLabel" binding="scoreLabel">
                 <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
                     <minimum-size width="100" height="-1"/>
                   </grid>
                 </constraints>
@@ -498,7 +523,7 @@
                 <properties>
                   <font name="Arial Black" size="16" style="0"/>
                   <foreground color="-1180179"/>
-                  <text value="Czy zapisać wynik operacji do pliku tekstowego?"/>
+                  <text value="Czy zapisać wynik operacji"/>
                 </properties>
               </component>
               <vspacer id="bef03">
@@ -509,7 +534,7 @@
               <grid id="9ea34" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
-                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties/>
                 <border type="none"/>
@@ -529,13 +554,25 @@
               </grid>
               <component id="f6b1a" class="javax.swing.JButton" binding="saveLogsButton">
                 <constraints>
-                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-12897221"/>
                   <font name="Century Gothic" size="18" style="0"/>
                   <foreground color="-1180179"/>
                   <text value="Zapisz"/>
+                </properties>
+              </component>
+              <component id="418f7" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font name="Arial Black" size="16" style="0"/>
+                  <foreground color="-1180179"/>
+                  <text value="do pliku tekstowego?"/>
                 </properties>
               </component>
             </children>
