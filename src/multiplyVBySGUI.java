@@ -157,6 +157,14 @@ public class multiplyVBySGUI extends JFrame{
             }
         });
 
+        ustawieniaButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new settingsGUI();
+            }
+        });
+
 
 
 

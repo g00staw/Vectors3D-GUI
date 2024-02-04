@@ -137,5 +137,13 @@ public class ScalarProductOfVGUI extends JFrame{
                 new MainMenu();
             }
         });
+
+        ustawieniaButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new settingsGUI();
+            }
+        });
     }
 }

@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dc5fc69-f36b-4316-8cd1-228c627da4ca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InjectDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InjectDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LengthOfVFunc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LengthOfVFunc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MultiplyVBySFunc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiplyVBySFunc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoundedResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RoundedResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ScalarProductOfVsFunc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScalarProductOfVsFunc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SubtractionFunc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SubtractionFunc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SumFunc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SumFunc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScalarProductOfVGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScalarProductOfVGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SubtractionOfVGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SubtractionOfVGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lengthOfVGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lengthOfVGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/multiplyVBySGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/multiplyVBySGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
