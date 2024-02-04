@@ -16,9 +16,11 @@ public class LoadDatabaseToTable extends JFrame {
 
         InjectDatabase database = new InjectDatabase(path);
         List<Vector3D> vectorsFromDatabase = database.readVectorsFromDatabase();
+        int index = 0;
         if (vectorsFromDatabase != null) {
             for (Vector3D vector : vectorsFromDatabase) {
-                model.addRow(new Object[]{vector.getId(), vector.getX(), vector.getY(), vector.getZ()});
+                model.addRow(new Object[]{index, vector.getX(), vector.getY(), vector.getZ()});
+                index++;
             }
         }
         return model;

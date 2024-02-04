@@ -174,7 +174,7 @@ public class EditDatabaseGUI extends JFrame{
                     if (vectorCords.getIntData(idREMOVE.getText())) {
                         int id = Integer.parseInt(idREMOVE.getText());
                         Row rowToRemove = sheet.getRow(id);
-                        if(id > 0 && id <= sheet.getLastRowNum() && rowToRemove != null){
+                        if(id >= 0 && id <= sheet.getLastRowNum() && rowToRemove != null){
 
                             sheet.removeRow(rowToRemove);
 
